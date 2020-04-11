@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,600&display=swap');
+
+.logo{
+    position: 16px 10px;
+    width: 24px;
+    height: 24px;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    height: 20px;
+    min-height: 50px;
+    padding: 10px 16px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 5; 
+
+  }
+
+  header nav ul {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 44px;
+    height: 0px;
+    right: 0;
+    list-style: none;
+    background: #0000EC;
+    overflow: hidden;
+  }
+
+  header nav ul li a {
+    text-decoration: none;
+    color:#FFFFFF;
+    font-size: 16px;
+    padding: 24px;
+    display: block;
+    position: relative;
+ }
+
+  input[type="checkbox"]:checked ~ ul {
+    height: 240px;
+
+  }
+
+.menu_elementos {
+    display: block;
+    padding-top: 5px;
+    padding-right: 16px;
+    margin-right: 16px;
+  }
+
+.menu_elementos input {
+    display: block;
+    position: absolute;
+    opacity: 0;
+    width: 40px;
+    height: 32px;
+    z-index: 2;
+  }
+
+.menu_elementos span {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 3px;
+    margin-bottom: 5px;
+    background: #000;
+  }
+
+.menu_elementos span:first-child {
+
+    transform-origin: -1px 3px;
+      transform-origin: 0% 0%;
+  }
+
+.menu_elementos span:nth-last-child(2) {
+
+    transform-origin: -1px 3px;
+      transform-origin: 0% 100%;
+
+  }
+
+.menu_elementos input:checked ~ span {
+
+    transform-origin: -1px 3px;
+    opacity: 1;
+    transform: rotate(45deg) translate(1px, 2px);
+
+  }
+
+.menu_elementos input:checked ~ span:nth-last-child(3) {
+
+    opacity: 0;
+
+  }
+
+  .menu_elementos input:checked ~ span:nth-last-child(2) {
+
+    transform-origin: -1px 3px;
+    transform: rotate(-45deg) translate(-2px, 4px);
+  }
+
+  @media screen and (min-width: 400px) {
+
+
+    header {
+      position: relative;
+
+    }
+
+    header nav ul {
+
+      display: flex;
+      flex-direction: row;
+      height: 80px;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      width: auto;
+      background: #fff;
+    }
+
+    header nav ul li a {
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 10px 15px 15px 10px;
+      color: #060A24;
+    }
+    
+    #menu a:hover {
+        color: #00F3BB;
+        text-decoration: line-through;
+     transition: color .5s;
+     }
+    #menu a:active{
+       color: #060A24;
+      text-decoration: line-through;
+      transition: color .5s;
+    }
+
+    .menu_elementos input, .menu_elementos span {
+      display: none;
+    }
+
+  }
+

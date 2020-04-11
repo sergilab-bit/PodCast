@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,700|IBM+Plex+Sans:400,500,700&display=swap');
+
+.block-episodio{
+    padding-left: 16px;
+    padding-top: 64px;
+    padding-right: 147px;
+   
+    /*border-top: 24px solid white;*/
+}
+
+#titulo-episodio{
+font-family: 'IBM Plex Sans', sans-serif;
+font-size: 36px;
+color: #FFFFFF;
+letter-spacing: 0;
+line-height: 42px;
+}
+
+.block-episodio div.podcast {
+  
+    justify-content: center;
+    align-items: center;
+    padding-top: 63px;
+    padding-left: 16px;
+}
+
+.block {
+    width: 320px;
+    height: 1203.5px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    margin-top: 24px;
+    clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+    position: relative;
+    
+}
+
+.block .podcast{
+  
+    justify-content: center;
+    align-items: center;
+    padding-top: 21px;
+    padding-left: 11px;
+    padding-right: 11px;
+
+}
+
+iframe {
+    widows: 298px;
+    height: 225px;
+}
+
+.phone{
+    padding-top: 0px;
+    padding-right: 10px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1400px;
+
+}
+#phone{
+    width: 320px;
+    height: 519px;
+
+}
+
+@media screen and (min-width: 400px) {
+
+
+    .block {
+        width: 1440px;
+        height: 1042.6px;
+        background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+        margin-top: 5px;
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+       
+    }
+    
+ .block-episodio{
+    margin-left: 100px;
+    padding-left: 100px;
+    padding-top: 186px;
+    padding-right: 1031px;
+    
+        /*border-top: 24px solid white;*/
+    }
+
+ .block .podcast{
+        
+        justify-content: center;
+        align-items: center;
+        margin-left: 100px;
+        margin-top: 26px;
+        padding-right: 11px;
+        
+
+    }
+
+.phone{
+    padding-left: 200px;
+    top: -126px;
+    position: relative;
+}
+#phone{
+    width: 457.6px;
+    height: 660px;
+}
+div.podcast iframe{
+
+    margin-bottom: 72px;
+    margin-top: 26px;
+}
+    iframe {
+        width: 584px;
+        height: 232px;
+    }
+
+  }

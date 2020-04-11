@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|IBM+Plex+Sans:400,600&display=swap');
+@import url('estilos/css/head.css');
+@import url('estilos/css/episodio.css');
+@import url('estilos/css/principal.css');
+@import url('estilos/css/phone.css');
+@import url('estilos/css/invitado.css')
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    max-width: 1440px;
+    min-width: 300px;
+    margin: auto;
+    background-color: #ffffff; 
+}
+
+
+
